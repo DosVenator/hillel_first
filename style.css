@@ -1,0 +1,8 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 7rem;
+}
+p {
+    font-size: 3rem;
+}
