@@ -31,3 +31,11 @@ console.log(`${age} ${city}`);
 let number = prompt("Enter a five-digit number:");
     console.log(number.split("").join(" "));
 
+let lines = [
+    prompt("Введіть перший рядок:"),
+    prompt("Введіть другий рядок:"),
+    prompt("Введіть третій рядок:")
+];
+    
+console.log(lines.sort(() => Math.random() - 0.5).join("\n"));
+
