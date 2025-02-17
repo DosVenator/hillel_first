@@ -1,7 +1,7 @@
 // (1) First task
 
-const a = 10;
-const b = 10;
+const a = prompt('Enter any number');
+const b = prompt('Enter any number');
 if (a > b) {
     console.log('First number is bigger');
 }
@@ -16,7 +16,7 @@ else {
 
 const A = prompt('Enter the number in feet');
 const B = prompt('Enter the number in kilometers');
-const metersA = (A * 0,305);
+const metersA = (A * 0.305);
 const metersB = (B * 1000);
 console.log(metersA);
 console.log(metersB);
