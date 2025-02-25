@@ -1,42 +1,25 @@
-// let arr = [];
-// let userLength = prompt('Enter lenght of array');
+// let user;
+// do {
+// user = prompt('Enter any string')
+// } while (!isNaN(parseInt(user)));
+// user = user.split('');
 
-// let sum = 0;
+// let delet;
+// do {
+// delet = prompt('Enter any symbol for delete');
+// } while (delet === null)
+// dele = delet.split('');
 
-// for(let i = 0; i < userLength; i++) {
-//     let a = prompt('Enter element of array');
-//     arr.push(a);
-//     if (!isNaN(parseInt(a))) {
-//         sum += parseInt(a);
+// function deleteA (a, b) {
+//     for(let i = 0; i < a.length; i++) {
+//         for(let e = 0; e < b.length; e++) {
+//             if (a[i] === b[e]) {
+//                 a.splice(i, 1);
+//                 i--;
+//             }
+//         }
 //     }
+//     console.log(a.join(''));
 // }
-// console.log(arr);
-// console.log(sum);
 
-
-let arr = [];
-let userLength;
-do {
-userLength = prompt('Enter lenght of array');
-} while (isNaN(userLength) || userLength < 1);
-
-for(let i = 0; i < userLength; i++) {
-    let a = prompt('Enter element of array');
-    arr.push(a);
-}
-
-let summ = 0;
-let kolk = 0;
-
-function getSum (a, b) {
-    for(let i = 0; i < a.length; i++) {
-        if (!isNaN(parseInt(a[i]))) {
-            summ += parseInt(a[i]);
-            kolk++;
-        }
-    }
-    console.log(summ);
-    console.log(summ / kolk);
-}
-
-getSum(arr);
+// deleteA (user, delet);
