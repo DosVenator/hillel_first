@@ -1,6 +1,6 @@
 function getNumber() {
   let userValue;
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 10; i++) {
     userValue = prompt("Enter a number bigger than 100");
     if (userValue === null) {
       console.log("User closed input");
