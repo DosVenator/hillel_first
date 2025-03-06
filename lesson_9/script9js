@@ -1,0 +1,26 @@
+let company = {
+  sales: [
+    { name: "John", salary: 1000 },
+    { name: "Alice", salary: 600 },
+  ],
+  development: {
+    web: [
+      { name: "Peter", salary: 2000 },
+      { name: "Alex", salary: 1800 },
+    ],
+    internals: [{ name: "Jack", salary: 1300 }],
+  },
+};
+
+function sumSalary(a) {
+  if (Array.isArray(a)) {
+    return a.reduce(function (sum, digit) {
+      return (sum += digit.salary);
+    }, 0);
+  } else {
+    return Object.values(a).reduce(function (sum, digit) {
+      return (sum += sumSalary(digit));
+    }, 0);
+  }
+}
+console.log(sumSalary(company));
