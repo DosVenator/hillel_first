@@ -1,16 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    
+}
 .wrapper {
-    padding: 30px 0;
+    padding: 30px;
+    overflow: hidden;
+    
+}
+.section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
+    row-gap: 20px;
 }
 .btn {
     width: 100px;
     height: 40px;
-    background-color: aqua;
+    background-color: rgb(228, 64, 64);
     border-radius: 5px;
-
+    margin: auto;
 }
 .table {
     display: none;
+    margin: auto;
 }
-.table.active {
+.active {
     display: block;
+    text-align: center;
+}
+td, tr {
+    border: 1px solid black;
+}
+.text {
+    width: 500px;
+    text-align: center;
+}
+.red {
+    color: red;
 }
