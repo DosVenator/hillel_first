@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+        <form action="#" name="registration" class="form">
+        <p class="p_name">
+        <input type="text" name="name" placeholder="Name">
+        <input type="text" name="female" placeholder="Female">
+        <p class="date_text"> Date of birthday - 
+        <input type="date" name="birth">
+        </p>
+        </p>
+        <p class="p_gender">
+        <input type="radio" name="gender" value="M"> man
+        <input type="radio" name="gender" value="W"> woman
+        </p>
+        <div class="p_adress">
+        <select name="city" id="city">
+            <option value="">Choose city</option>
+            <option value="KV">Kyiv</option>
+            <option value="OD">Odessa</option>
+            <option value="KH">Kharkiv</option>
+            <option value="DN">Dnipro</option>
+            <option value="LV">Lviv</option>
+        </select>
+        <textarea name="adress" id="adress" placeholder="Enter your adress"></textarea>
+        <p>
+        <input type="checkbox" name="lang" value="English"> English
+        </p>
+        <p>
+        <input type="checkbox" name="lang" value="Ukrainian"> Ukrainian
+        </p>
+        <p>
+        <input type="checkbox" name="lang" value="French"> French
+        </p>
+        <p>
+        <input type="checkbox" name="lang" value="German"> German
+        </p>
+        <button type="button" class="btn_save">Save</button>
+        </div>
+        </form>
+        </div>
+        <div class="container container_2"></div>   
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

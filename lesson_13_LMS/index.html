@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styleLMS.css">
+</head>
+<body>
+    <div class="container">
+        <h2><span>We would like to help you</span></h2>
+        <form name="Form">
+            <input type="text" name="name" placeholder="Name" title="Name">
+            <div class="error-message">Invalid name</div>
+            
+            <textarea name="message" placeholder="Message" title="Message"></textarea>
+            <div class="error-message">Invalid Message</div>  
+            <p>HOW TO ANSWER YOU?</p>
+            
+            <input type="tel" name="phone" placeholder="Phone number" title="Phone number">
+            <div class="error-message">Your phone number must start of +380</div> 
+            
+            <input type="email" name="email" placeholder="Email" title="Email">
+            <div class="error-message">Your email must have @ and .</div> 
+            
+            <button class="Sumbit" type="button">Send message</button>
+        </form>
+    </div>
+    <div class="order-info"></div>
+    <script src="./scriptLMS.js"></script>
+</body>
+</html>

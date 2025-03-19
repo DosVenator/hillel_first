@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.form {
+  width: 500px;
+  height: 100%;
+}
+p {
+  padding: 0 50px;
+}
+.p_name {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.p_sex {
+  display: flex;
+  justify-content: center;
+}
+.p_adress {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+}
+.date_text {
+    text-align: center;
+}
+.btn_save {
+  margin: auto;
+  width: 100px;
+  height: 30px;
+}
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+td {
+    padding: 6px;
+  border: 2px solid black;
+}
