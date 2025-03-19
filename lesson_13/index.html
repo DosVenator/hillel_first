@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="section">
+        <div class="wrapper">
+          <div class="categories">
+            <h2>Categories</h2>
+            <div class="container"></div>
+          </div>
+          <div class="products">
+            <h2>Products</h2>
+            <div class="container"></div>
+          </div>
+          <div class="information">
+            <h2>Information</h2>
+            <div class="container"></div>
+          </div>
+        </div>
+        <div class="order-info"></div>
+        <div class="wrapper wrapper_form">
+            <form class="form" action="#" name="endBuy">
+                <div class="form_in">
+                <input type="text" name="name" id="name" placeholder="Enter your surname name patronymic" title="S.N.P.">
+                <select name="city" id="city" title="City">
+                    <option value="">Choose city</option>
+                    <option value="Kyiv">Kyiv</option>
+                    <option value="Odessa">Odessa</option>
+                    <option value="Kharkiv">Kharkiv</option>
+                    <option value="Dnipro">Dnipro</option>
+                    <option value="Lviv">Lviv</option>
+                </select>
+                <select name="mail" id="mail" title="Post office">
+                    <option value="">Choose post office</option>
+                    <option value="num_1">Department №1</option>
+                    <option value="num_2">Department №2</option>
+                    <option value="num_3">Department №3</option>
+                    <option value="num_4">Department №4</option>
+                    <option value="num_5">Department №5</option>
+                </select>
+                <div class="radio">
+                <input type="radio" name="payment" title="Payment upon receipt"> Cash
+                <input type="radio" name="payment" title="Payment on the internet"> Internet payment
+            </div>
+                <input type="number" name="amount" placeholder="Choose amount" title="Quantity of goods">
+                <textarea name="comment" id="comment" placeholder="Comment.Please enter at least 15 characters" title="Comment to order"></textarea>
+                <button class="btn_sumbit" type="button">Sumbit</button>
+            </div>
+            </form>
+        </div>
+      </section>
+      <script src="./product.js"></script>
+      <script src="./script.js"></script>
+</body>
+</html>
