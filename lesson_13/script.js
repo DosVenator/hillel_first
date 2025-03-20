@@ -82,7 +82,7 @@ function showCategories() {
     console.log(name)
     const pattern = /^[A-Z][a-z]{1,} [A-Z][a-z]{1,} [A-Z][a-z]{1,}$/;
     const pattern2 = /\w{1,}/;
-    const pattern3 = /^\d{1,2}$/;
+    const pattern3 = /^[1-9]\d?$/;
     const pattern4 = /^[a-zA-Z0-9_ ]{15,}$/;
     const existError = document.querySelector('.red');
     let hasError = false;
@@ -100,7 +100,7 @@ function showCategories() {
         input.style.borderColor = 'green';
         arrValue.push(value);
         arrHeader.push(head);
-      } else if (value === 0 || value === '' || !pattern.test(value)) {
+      } else if (value == 0 || value === '' || !pattern.test(value)) {
         input.style.borderColor = 'red';
         hasError = true;
       } 
