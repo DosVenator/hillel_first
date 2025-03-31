@@ -156,16 +156,9 @@ document.querySelector(".btn_sumbit").addEventListener("click", () => {
   } else {
     Exempl["date"] = new Date().toLocaleString();
 
-    const orderAll = JSON.parse(localStorage.getItem("Order")) || [];
-    orderAll.push(Exempl);
-    localStorage.setItem("Order", JSON.stringify(orderAll));
+    getLocalStorage();
     tableGet(arrValue, arrHeader, true);
-    form.reset();
-    const allInputs = form.querySelectorAll("input, textarea");
-    allInputs.forEach((input) => {
-      input.style.borderColor = "";
-    });
-    document.querySelector(".radio").style.border = "none";
+    formReset();
     const wrapForm = document.querySelector(".wrapper_form");
     wrapForm.classList.remove("active");
   }

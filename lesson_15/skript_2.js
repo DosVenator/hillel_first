@@ -110,3 +110,8 @@ function deleteOrder(index) {
   localStorage.setItem("Order", JSON.stringify(orderAll));
   showOrders();
 }
+function getLocalStorage () {
+  const orderAll = JSON.parse(localStorage.getItem("Order")) || [];
+  orderAll.push(Exempl);
+  localStorage.setItem("Order", JSON.stringify(orderAll));
+}
