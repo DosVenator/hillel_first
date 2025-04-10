@@ -1,0 +1,31 @@
+body { 
+    font-family: Arial; 
+    padding: 20px; 
+}
+.section { 
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 
+    15px; 
+    border-radius: 
+    10px; 
+}
+textarea, input { 
+    width: 100%; 
+    margin-top: 5px; 
+    padding: 8px; 
+    box-sizing: border-box;
+}
+button { 
+    margin-top: 10px; 
+    padding: 10px 20px; 
+}
+#infoSection {
+    display: none;
+}
+#apartmentSection {
+    display: none;
+}
