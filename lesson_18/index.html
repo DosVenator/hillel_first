@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="section">
+        <h2>Create House</h2>
+        <input id="houseNumber" placeholder="House number" type="text" />
+        <input id="houseApartments" placeholder="Number of apartments" type="number" />
+        <button class="btn_next">Next</button>
+      </div>
+    
+      <div class="section" id="apartmentSection">
+        <h2>Add Apartment</h2>
+        <input id="aptNumber" placeholder="Apartment number" type="number" />
+        <input id="aptRooms" placeholder="Number of rooms" type="number" />
+    
+        <h3>Add Resident</h3>
+        <input placeholder="Name" type="text" id="residentName" />
+        <input placeholder="Age" type="number" id="residentAge" />
+        <input placeholder="Job" type="text" id="residentJob" />
+        <button class="btn_addResident">Add Resident</button>
+    
+        <button class="btn_addApartment">Add Apartment</button>
+        <button class="btn_showInfo">Show House Info</button>
+        <button class="btn_newHouse">New House</button>
+      </div>
+    
+      <div class="section" id="infoSection">
+        <h2>House Info</h2>
+        <div id="houseInfo"></div>
+      </div>
+    <script src="./Script/apartment.js"></script>
+    <script src="./Script/resident.js"></script>
+    <script src="./Script/house.js"></script>
+    <script src="./Script/LMS_bankAccount.js"></script>
+    <script src="./Script/LMS_calculator.js"></script>
+    <script src="./Script/LMS_coach.js"></script>
+    <script src="./Script/helpers.js"></script>
+    <script src="./Script/app.js"></script>
+</body>
+</html>
