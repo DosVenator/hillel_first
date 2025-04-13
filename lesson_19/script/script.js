@@ -1,11 +1,11 @@
 const collection = [
-  "../photo/ph_1.jpeg",
-  "../photo/ph_2.jpeg",
-  "../photo/ph_3.jpeg",
-  "../photo/ph_4.jpeg",
-  "../photo/ph_5.jpeg",
-  "../photo/ph_6.jpeg",
-  "../photo/ph_7.jpeg",
+  "../../photo/ph_1.jpeg",
+  "../../photo/ph_2.jpeg",
+  "../../photo/ph_3.jpeg",
+  "../../photo/ph_4.jpeg",
+  "../../photo/ph_5.jpeg",
+  "../../photo/ph_6.jpeg",
+  "../../photo/ph_7.jpeg",
 ];
 
 const descr = document.querySelector(".descr");
