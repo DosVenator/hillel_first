@@ -1,0 +1,90 @@
+
+.section {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    row-gap: 10rem;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    max-width: 1440px;
+}
+.wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.weather {
+    width: 50rem;
+    height: 20rem;
+    background-image: url(../imgs/phone.avif);
+    background-size: cover;
+    padding: 2rem;
+    border-radius: 3rem;
+    box-shadow: 0 0 3rem black;
+    
+
+}
+.weather__header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.weather__city {
+    font-size: 5rem;
+    font-weight: 600;
+}
+.weather__status {
+    font-size: 3rem;
+}
+.weather__temp {
+    font-size: 5rem;
+    font-weight: 600;
+}
+.weather__feelsLike {
+    font-size: 3rem;
+}
+.img__weather {
+    width: 100%;
+    height: 100%;
+}
+.weather__pressure {
+    font-size: 3rem;
+}
+.weather__icon {
+    width: 7rem;
+    height: 7rem;
+}
+
+.weather__loading {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.box {
+    display: block;
+    width: 32rem;
+    height: 32rem;
+    border: 3px solid black;
+}
+.box_img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.btn_reload {
+    height: 100px;
+    width: 150px;
+    border-radius: 30%;
+    margin: auto;
+    background-color: rgb(40, 168, 223);
+}
+.btn_reload:hover {
+    background-color: rgb(7, 136, 192);
+    font-weight: bold;
+}
