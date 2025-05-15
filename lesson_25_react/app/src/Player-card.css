@@ -1,0 +1,6 @@
+.Player-card {
+    border: 1px solid white;
+    padding: 5px;
+    min-width: 75px;
+    min-height: 100px;
+}

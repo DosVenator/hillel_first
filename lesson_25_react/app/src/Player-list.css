@@ -1,0 +1,7 @@
+.Player-list {
+    display: flex;
+    gap: 10px;
+}
+.btn {
+    margin-top: 10px;
+}
