@@ -1,15 +1,25 @@
-import { useState } from 'react';
+import { useState } from "react";
+import { useNavigate } from "react-router";
+import { useContext } from "react";
+import { LanguageContext, translations } from "./contexts/language";
 
 function AddContactForm({ onAdd }) {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [phone, setPhone] = useState('');
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [phone, setPhone] = useState("");
+  const navigate = useNavigate();
+  const { value: language } = useContext(LanguageContext);
 
   function handleSubmit(event) {
     event.preventDefault();
+    const phoneRegex = /^380[0-9]{9}$/;
 
     if (!firstName || !lastName || !phone) {
-      alert('Заповніть всі поля!');
+      alert(translations[language].fillAll);
+      return;
+    }
+    if (!phoneRegex.test(phone)) {
+      alert("Невірний номер телефону!");
       return;
     }
 
@@ -17,37 +27,39 @@ function AddContactForm({ onAdd }) {
       id: Date.now(),
       firstName,
       lastName,
-      phone
+      phone,
     };
 
     onAdd(newContact);
 
-    setFirstName('');
-    setLastName('');
-    setPhone('');
+    setFirstName("");
+    setLastName("");
+    setPhone("");
+
+    navigate("/contact");
   }
 
   return (
     <form onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="Ім’я"
+        placeholder={translations[language].firstName}
         value={firstName}
-        onChange={event => setFirstName(event.target.value)}
+        onChange={(e) => setFirstName(e.target.value)}
       />
       <input
         type="text"
-        placeholder="Прізвище"
+        placeholder={translations[language].lastName}
         value={lastName}
-        onChange={event => setLastName(event.target.value)}
+        onChange={(e) => setLastName(e.target.value)}
       />
       <input
         type="text"
-        placeholder="Телефон"
+        placeholder={translations[language].phone}
         value={phone}
-        onChange={event => setPhone(event.target.value)}
+        onChange={(e) => setPhone(e.target.value)}
       />
-      <button type="submit">Зберегти</button>
+      <button type="submit">{translations[language].save}</button>
     </form>
   );
 }
